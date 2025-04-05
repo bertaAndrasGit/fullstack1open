@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Data structures in Jinja2</h2>
+
+    <h3>List operators</h3>
+
+    <p>Jina said her top three favorite movies were
+         {{ movies[0] }}, {{ movies[1] }}, {{ movies[2] }}.</p>
+    
+
+
+    <h3>Dictionary Operations</h3>
+
+    <p>This is a {{ car["brand"] }} {{ car["model"] }}, 
+        built in {{ car["year"] }}.</p>
+    
+
+
+    <h3>Custom Data Structure Operations</h3>
+
+    <p>The five Galilean moons of Jupiter are 
+        {{ moons.first }}, {{ moons.second}}, {{ moons.third }}, 
+        {{ moons.fourth }}, {{ moons.fifth }}.</p>
+
+
+</body>
+</html>

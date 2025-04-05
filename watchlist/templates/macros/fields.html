@@ -1,0 +1,26 @@
+{% macro render_text_field(field) %}
+<div class="form__group">
+    {{ field.label(class_="form__label") }}
+    <!-- a class="form__field" az ugyan az mint a html-ben a class -->
+    {{ field(class_="form__field") }}
+
+    <!-- display errors -->
+    {% for error in field.errors %}
+        <span class="form_error">{{ error }}</span>
+    {% endfor %}
+
+</div>
+{% endmacro %}
+
+{% macro render_area_field(field) %}
+<div class="form__group">
+
+    {{ field.label(class_="form__label") }}
+    {{ field(rows=4, class_="form__field", style="resize: none") }}
+
+    {% for error in field.errors %}
+        <span class="form_error">{{ error }}</span>
+    {% endfor %}
+
+</div>
+{% endmacro %}

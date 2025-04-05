@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block head %}
+   <style>
+    .notfound{
+        color: whitesmoke;
+        text-align: center;
+        background-color: grey;
+        font-size: 125%;
+    }
+   </style>
+{% endblock %}
+
+
+{% block content %}
+    <h1>Not Found</h1>
+    <p>We're sorry, that todo item was not found:</p>
+    <p class="notfound">{{ text }}</p>
+{% endblock %}
